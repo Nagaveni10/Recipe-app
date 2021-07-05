@@ -59,7 +59,7 @@ function Receipes({ setSearch, searchReceipe }) {
   const [receipe, setReceipe] = useState([]);
 
   useEffect(() => {
-    fetch("https://recipedb-nagu.herokuapp.com/recipes", {
+    fetch("https://recipedb-nagu.herokuapp.com/", {
       method: "GET",
     })
       .then((res) => res.json())
