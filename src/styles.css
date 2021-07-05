@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* body {
+    /* padding: 0px 150px 50px 150px; 
+}*/
+
+html {
+  background: linear-gradient(to right, rgb(241, 167, 173), rgb(241, 167, 14));
+  /* background-color: rgb(241, 167, 173); */
+  /* display: "flex"; */
+}
+
+.header {
+  padding: 10px 10px 50px 10px;
+}
+.App.mb {
+  color: brown;
+  font-style: "oblique";
+  font-family: "cursive";
+  font-size: "3em";
+}
+.container {
+  padding: 0px 50px 50px 50px;
+  display: grid;
+  row-gap: 50px;
+  gap: 50px;
+}
+
+.cards {
+  max-width: 25rem;
+  /* display: grid; */
+}
+
+/* Screen larger than 800px? 2 column */
+
+@media (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 1000px? 3 columns */
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.favicon {
+  margin-left: "auto";
+}
