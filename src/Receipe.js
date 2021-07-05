@@ -59,7 +59,7 @@ function Receipes({ setSearch, searchReceipe }) {
   const [receipe, setReceipe] = useState([]);
 
   useEffect(() => {
-    fetch("https://recipedb-nagu.herokuapp.com/", {
+    fetch("https://mockapi.io/projects/609e2a6333eed80017957e00/", {
       method: "GET",
     })
       .then((res) => res.json())
