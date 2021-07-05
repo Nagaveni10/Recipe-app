@@ -59,7 +59,7 @@ function Receipes({ setSearch, searchReceipe }) {
   const [receipe, setReceipe] = useState([]);
 
   useEffect(() => {
-    fetch("https://mockapi.io/projects/609e2a6333eed80017957e00/", {
+    fetch("https://609e2a6333eed80017957dff.mockapi.io/", {
       method: "GET",
     })
       .then((res) => res.json())
